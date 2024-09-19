@@ -12,7 +12,12 @@ class BukuTamuController extends Controller
      */
     public function index()
     {
-        //
+        // // panggil model Ruang
+        $hasil = BukuTamu ::all();
+        // cek isi variabel $hasil
+        // cek isi variabel $hasil
+       // dd($hasil);
+       return view('bukutamu.index')->with('hasil', $hasil);
     }
 
     /**
